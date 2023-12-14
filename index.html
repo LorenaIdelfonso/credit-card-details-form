@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/script.js" defer></script>
+    <title>Credit Card</title>
+  </head>
+  <body>
+    <form class="container" id="form">
+      <div class="card">
+        <div class="card-front">
+          <div class="card-images">
+            <img src="./src/img/chip.svg" alt="" />
+            <img src="./src/img/visa.svg" alt="" />
+          </div>
+
+          <p class="card-number">0000 0000 0000 0000</p>
+
+          <div class="card-extra">
+            <span class="card-name">Jane Doe</span>
+            <span class="card-date">00/00</span>
+          </div>
+        </div>
+
+        <div class="card-back">
+          <div></div>
+          <div><span class="card-cvc">000</span></div>
+        </div>
+      </div>
+
+      <div class="form-items">
+        <div class="col">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="0000 0000 0000 0000"
+          />
+          <p class="error-message number">Please enter a valid 000 000 000 000 number format</p>
+        </div>
+
+        <div class="col">
+          <label for="card-name">Cardholder Name</label>
+          <input
+            type="text"
+            id="card-name"
+            placeholder="Jane Doe"
+          />
+          <p class="error-message name">Please enter a name between 2-16 letters characters.</p>
+        </div>
+
+        <div>
+          <label for="exp-data">Exp. Data</label>
+          <input type="text" id="exp-data" placeholder="mm/yy" />
+          <p class="error-message date">Please enter a valid date in the format MM/YY.</p>
+        </div>
+
+        <div> 
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" placeholder="000" />
+          <p class="error-message cvc">Please enter a valid 3-digit number.</p>
+        </div>
+
+        <button id="button" class="col" type="submit">Confirm</button>
+      </div>
+    </form>
+  </body>
+</html>
