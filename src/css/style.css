@@ -1,7 +1,6 @@
 :root {
   --color-p1: #7c41d9;
   --color-p2: #9961f2;
-  --color-p3: #0a0033;
   --color-n1: #f5f7fa;
   --color-n2: #ced3d9;
   --color-n3: #636973;
@@ -82,7 +81,7 @@ body {
 
 .error-message {
   display: none;
-  color: red;
+  color: #FF6666;
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -93,7 +92,7 @@ body {
   display: block;
   padding: 8px 16px;
   background: var(--color-p1);
-  color: var(--color-p3);
+  color: var(--color-n1);
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;

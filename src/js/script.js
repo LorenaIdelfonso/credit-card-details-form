@@ -24,14 +24,14 @@ function handleForm(e) {
 
   if (numberRegex.test(numberValue)) {
     number.innerText = numberValue;
-    cardNumber.style.borderColor = "green";
+    cardNumber.style.borderColor = "#368836";
     errors.forEach(error => {
       if(error.className.includes("number")) {
         error.style.display = "none";
       }
     })
   } else {
-    cardNumber.style.borderColor = "red";
+    cardNumber.style.borderColor = "#FF6666";
     errors.forEach(error => {
       if(error.className.includes("number")) {
         error.style.display = "block";
@@ -41,14 +41,14 @@ function handleForm(e) {
 
   if(nameRegex.test(nameValue)) {
     name.innerText = nameValue;
-    cardName.style.borderColor = "green";
+    cardName.style.borderColor = "#368836";
     errors.forEach(error => {
       if(error.className.includes("name")) {
         error.style.display = "none";
       }
     })
   } else {
-    cardName.style.borderColor = "red";
+    cardName.style.borderColor = "#FF6666";
     errors.forEach(error => {
       if(error.className.includes("name")) {
         error.style.display = "block";
@@ -58,14 +58,14 @@ function handleForm(e) {
 
   if(dateRegex.test(dateValue)) {
     date.innerText = dateValue;
-    cardDate.style.borderColor = "green";
+    cardDate.style.borderColor = "#368836";
     errors.forEach(error => {
       if(error.className.includes("date")) {
         error.style.display = "none";
       }
     })
   } else {
-    cardDate.style.borderColor = "red";
+    cardDate.style.borderColor = "#FF6666";
     errors.forEach(error => {
       if(error.className.includes("date")) {
         error.style.display = "block";
@@ -75,14 +75,14 @@ function handleForm(e) {
 
   if(cvcRegex.test(cvcValue)) {
     cvc.innerText = cvcValue;
-    cardCvc.style.borderColor = "green";
+    cardCvc.style.borderColor = "#368836";
     errors.forEach(error => {
       if(error.className.includes("cvc")) {
         error.style.display = "none";
       }
     })
   } else {
-    cardCvc.style.borderColor = "red";
+    cardCvc.style.borderColor = "#FF6666";
     errors.forEach(error => {
       if(error.className.includes("cvc")) {
         error.style.display = "block";
